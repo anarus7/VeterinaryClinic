@@ -1,0 +1,71 @@
+.sidebar {
+  color: #fff;
+  width: 250px;
+  padding-left: 20px;
+  height: 100vh;
+  background-image: linear-gradient(30deg, #0048bd, #44a7fd);
+  border-top-right-radius: 80px;
+  position: relative;
+
+}
+
+.sidebar a {
+  font-size: 12px;
+  color: #fff;
+  display: block;
+  padding: 12px;
+  padding-left: 30px;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+
+}
+
+.sidebar a:hover {
+  color: #3f5efb;
+  background: #fff;
+  outline: none;
+  position: relative;
+  background-color: #fff;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.sidebar a:hover::after {
+  content: '';
+  position: absolute;
+  background-color: transparent;
+  bottom: 100%;
+  right: 0;
+  height: 35px;
+  width: 35px;
+  border-bottom-right-radius: 18px;
+  box-shadow: 0 20px 0 0 #fff;
+
+}
+
+.sidebar a:hover::before {
+  content: '';
+  position: absolute;
+  background-color: transparent;
+  top: 38px;
+  right: 0;
+  height: 35px;
+  width: 35px;
+  border-top-right-radius: 18px;
+  box-shadow: 0 -20px 0 0 #fff;
+}
+
+.cat-image-container {
+  position: absolute;
+  bottom: 30px; /* Position it closer to the bottom edge */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px; /* Increase size to make the cat bigger */
+  height: auto;
+}
+
+.cat-image {
+  width: 100%;
+  height: auto;
+
+}
